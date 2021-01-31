@@ -1,0 +1,67 @@
+html,
+body {
+    position: relative;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.bg {
+    width: 80%;
+    height: 72%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.project-img {
+    height: 100%;
+    width: 100%;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.big-title {
+    position: fixed;   
+    top: 50%;
+    left: 50%;   
+    transform: translate(-50%, -50%);
+}
+.big-title h2 {
+    color: #000;
+    font-size: 200px;
+    font-weight: 900;
+    letter-spacing: 20px;
+    opacity: .3;
+}
+
+.email{
+    position: fixed;
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%) rotate(-90deg);
+    z-index: 10;
+}
+
+.email a{
+    color: #fff;
+    font-size: 13px;
+    position: relative;
+}
+
+.email a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    transition: all 0.7s cubic-bezier(0.075, 0.82, 0.165, 1)
+}
+
+.email:hover a::after{
+    width: 100%;
+}

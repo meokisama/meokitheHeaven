@@ -1,0 +1,7 @@
+html,
+body {
+    position: relative;
+    font-family: 'Poppins';
+    overflow-x: hidden;
+    height: 100%;
+}
